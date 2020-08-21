@@ -6,18 +6,17 @@ This project return a cv2 screen with the classifications and also prints out th
 1. **Python --3.7.6**
 2. **Conda --4.8.3**
 
-## Setup:
-```sh
-conda env create -f setup.yml
-conda activate trackid
-pip install -r setup.txt
-```
-
 ## Installation
 
 ```sh
 git clone https://github.com/nakul-shahdadpuri/trackid.git
 cd trackid/
+```
+## Setup:
+```sh
+conda env create -f setup.yml
+conda activate trackid
+pip install -r setup.txt
 ```
 
 ## Running trackid
