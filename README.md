@@ -21,14 +21,9 @@ pip install -r setup.txt
 
 ## Running trackid
 
-#### 1. For Videos [Output displayed on cv2 screen]
+#### 1. For Webcam [Default]
 ```sh
-python run.py [VIDEO NAME/PATH]
-```
-
-#### 2. For Webcam [Output displayed on cv2 screen]
-```sh
-python run.py 0
+python run.py 
 ```
 
 ## Resources
