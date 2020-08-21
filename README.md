@@ -1,32 +1,22 @@
 # Trackid
 Using YOLOv3 and DEEPSORT, this project attempts to track multiple objects on a screen and assign them a unique id to reduce overcounting.
-
-This implements a computer vision program for a traffic system, using YOLOv3 machine learning model. The program is implemented in python3 and produces class wise output of the vehicles detected.
-
-The abstracted procedure in the development and functioning of this process is:
-
-1. Run the model on a live stream analysing each frame.
-2. The frame wise output is stored in results/dump.csv
-3. Now the dump.csv is periodically analysed at regular intervals by process.py.
-4. The identified classes are stored in the database.
-5. The information regarding the which camera is to be analysed is stored in the config/ directory.
+This project return a cv2 screen with the classifications and also prints out the FPS and classes detected.
 
 ## Dependencies:
 1. **Python --3.7.6**
 2. **Conda --4.8.3**
-
-## Setup:
-```sh
-conda env create -f setup.yml
-conda activate trackid
-pip install -r setup.txt
-```
 
 ## Installation
 
 ```sh
 git clone https://github.com/nakul-shahdadpuri/trackid.git
 cd trackid/
+```
+## Setup:
+```sh
+conda env create -f setup.yml
+conda activate trackid
+pip install -r setup.txt
 ```
 
 ## Running trackid
@@ -36,7 +26,7 @@ cd trackid/
 python run.py [VIDEO NAME/PATH]
 ```
 
-####2. For Webcam [Output displayed on cv2 screen]
+#### 2. For Webcam [Output displayed on cv2 screen]
 ```sh
 python run.py 0
 ```
